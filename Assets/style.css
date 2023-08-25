@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: auto;
+}
+
+nav {
+  background-color: #1450a3;
+  padding: 20px;
+  width: 100%;
+  color: aliceblue;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+}
+.hero_img img {
+  width: 200px;
+  height: 250px;
+  border-radius: 50%;
+}
+
+.liz {
+  
+  font-size: x-large;
+  font-weight: 900;
+}
+
+.headerItems a {
+  color: aliceblue;
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 1rem;
+}
+
+.about {
+  display: flex;
+  padding: 5%;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.section2 h2,
+.section3 h2,
+.about h2 {
+  color: #1450a3;
+  margin: 3%;
+  text-align: center;
+  font-size: 3rem;
+}
+.section2 .images {
+  background-color: #eeeef0;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 80px;
+}
+
+.section2 img {
+  border-radius: 20%;
+  margin-top: 20px;
+}
+
+.section3 {
+  margin-top: 5%;
+  text-align: center;
+}
+.section4 {
+  margin-top: 5%;
+  background-color: #1450a3;
+  display: flex;
+  justify-content: space-between;
+  padding: 5%;
+}
+.section4 .opportunities {
+  color: aliceblue;
+  font-size: 20px;
+}
+.section4 button {
+  width: 100px;
+  height: 40px;
+  border: none;
+  border-radius: 10%;
+  font-size: 17px;
+  margin-left: 15px;
+  cursor: pointer;
+}
+p {
+  line-height: 20px;
+  font-weight: 100px;
+}
+
+footer {
+  background-color: #afb2b3;
+  color: rgb(50, 51, 51);
+  text-align: center;
+  padding: 5% 5% 1%;
+}
+footer h4 {
+  font-size: 18px;
+}
+footer h3 {
+  font-size: 21px;
+}
+footer i {
+  margin-right: 10px;
+  font-size: 20px;
+  padding-bottom: 15px;
+}
+footer .copyright {
+  margin-top: 40px;
+}
+
+/* media queries */
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  .about,
+  .section2,
+  .section3,
+  .section4 {
+    margin: auto;
+    text-align: center;
+  }
+  .hero_img img {
+    display: block;
+    margin: auto;
+  }
+  .section2 .images {
+    grid-template-columns: auto;
+    margin: auto;
+  }
+  .section4 {
+    text-align: center;
+    margin: auto;
+    display: block;
+  }
+  .section4 button {
+    display: block;
+    margin-bottom: 50px;
+    margin: auto;
+  }
+
+  .headerItems a {
+    font-size: 10px;
+  }
+  .about {
+    display: block;
+  }
+}
